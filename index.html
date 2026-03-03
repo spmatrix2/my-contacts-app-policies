@@ -2,39 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Contacts (Portable App)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contacts - Portable Desktop Backup Solution</title>
     <link rel="icon" type="image/x-icon" href="icon.ico">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 40px; background-color: #f4f7f6; }
-        .hero { background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 60px; border-radius: 15px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; }
-        .feature-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        h2 { color: #2980b9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 40px; background-color: #f4f7f6; }
+        .hero { background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); color: white; padding: 50px; border-radius: 15px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .hero h1 { margin: 0; font-size: 2.5em; }
+        .hero p { font-size: 1.2em; opacity: 0.9; }
+        
+        .main-purpose { background: white; padding: 30px; border-radius: 10px; margin-top: 30px; border-left: 5px solid #3498db; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .feature-card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        h2 { color: #2980b9; margin-top: 0; }
+        h3 { color: #2c3e50; }
+        
+        .security-box { background: #e8f4fd; padding: 25px; border-radius: 10px; margin-top: 30px; border: 1px dashed #3498db; }
+        
+        .user-control { margin-top: 30px; padding: 20px; background: #fff; border-radius: 10px; }
+        .user-control ul { padding-left: 20px; }
+        .user-control li { margin-bottom: 10px; }
+
         .footer-links { margin-top: 50px; text-align: center; border-top: 1px solid #ddd; padding-top: 20px; }
-        .footer-links a { margin: 0 20px; color: #34495e; font-weight: bold; text-decoration: none; border-bottom: 2px solid #3498db; }
+        .footer-links a { margin: 0 20px; color: #34495e; font-weight: bold; text-decoration: none; border-bottom: 2px solid #3498db; transition: 0.3s; }
+        .footer-links a:hover { color: #3498db; }
     </style>
 </head>
 <body>
+
     <div class="hero">
         <h1>My Contacts</h1>
-        <p>The Portable Desktop Backup Solution for Google Contacts</p>
+        <p>The secure, portable solution for local Google Contacts backup.</p>
+    </div>
+
+    <div class="main-purpose">
+        <h2>Application Purpose</h2>
+        <p><strong>My Contacts</strong> is a specialized desktop tool designed to give users full control over their Google Contacts. The application fetches contacts from your account solely to create an <strong>offline backup</strong>, allowing you to access your data locally without an active internet connection.</p>
     </div>
 
     <div class="features">
         <div class="feature-card">
-            <h2>Local & Secure</h2>
-            <p>Your data never leaves your computer. We use high-end encryption to store your Google Contacts in a local SQLite database, protected by your personal master password.</p>
+            <h3>📂 Local Storage & Hardcopy</h3>
+            <p>We provide the functionality to export your contacts into <strong>Word</strong> and <strong>Excel</strong> files. This is intended for creating high-quality printable copies (hardcopy), ensuring you have your critical contacts in physical form for emergency situations.</p>
         </div>
         <div class="feature-card">
-            <h2>Excel Integration</h2>
-            <p>Advanced mapping technology that exports contacts to professional Excel templates, handling multiple phone numbers and custom notes with precision.</p>
+            <h3>🔒 Total Privacy & Security</h3>
+            <p>Your contacts remain <strong>strictly</strong> within the application and on your local device. The local database is <strong>securely protected by a User Master Password</strong>. There is no further communication between the app and the web or third-party servers, except for the initial sync with Google.</p>
         </div>
+    </div>
+
+    <div class="security-box">
+        <h3>🛡️ Transparency and Data Integrity</h3>
+        <p>The application acts as a "local station". Once the sync is complete, the connection is terminated. No data processing occurs on external systems, and no information is ever sold, shared, or transmitted to any third party.</p>
+    </div>
+
+    <div class="user-control">
+        <h3>👤 User Control & Rights</h3>
+        <p>The user maintains absolute control at all times:</p>
+        <ul>
+            <li><strong>Data Deletion:</strong> You can immediately delete the local database and create a new one within the app.</li>
+            <li><strong>Full Uninstallation:</strong> You can remove the entire application and all stored data from your device.</li>
+            <li><strong>Revoke Access:</strong> You can revoke the app's permission to access Google Contacts at any time via your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Security settings</a>, preventing any future data fetching.</li>
+        </ul>
     </div>
 
     <div class="footer-links">
         <a href="Privacy.html">Privacy Policy</a>
         <a href="Terms.html">Terms of Service</a>
     </div>
-    <p style="text-align:center; color: #7f8c8d; margin-top: 30px;">Contact: bizas.sp@gmail.com</p>
+
 </body>
 </html>
